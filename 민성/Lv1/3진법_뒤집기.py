@@ -18,6 +18,20 @@ def solution(n):
     
     return answer
 
+def solution(n):
+    answer = ""
+    
+    while n:
+        # q가 n // 3 
+        # r이 n % 3
+        q, r = divmod(n, 3)
+        # q가 0이라는 것은 r이 마지막 자리
+        n = q
+        answer += str(r)
+    
+    answer = int(answer, 3)
+    
+    return answer
 
 def solution(n):
     tmp = ''
