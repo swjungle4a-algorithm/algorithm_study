@@ -1,7 +1,7 @@
 from math import ceil
 
 def car_time(dict):
-    result = [[0, 0]] * len(dict)
+    result = [0] * len(dict)
     idx = 0
 
     for car_num in dict:
