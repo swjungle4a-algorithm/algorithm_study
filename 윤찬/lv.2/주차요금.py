@@ -14,11 +14,11 @@ def car_time(dict):
             hm = list(map(int, minute.split(':')))
 
             if status == 'IN':
-                result[idx][1] -= (hm[0] * 60) + hm[1]
+                result[1] -= (hm[0] * 60) + hm[1]
             else:
-                result[idx][1] += (hm[0] * 60) + hm[1]
+                result[1] += (hm[0] * 60) + hm[1]
         if size % 2 == 1:
-            result[idx][1] += (23 * 60) + 59
+            result[1] += (23 * 60) + 59
 
         idx += 1
     return result
