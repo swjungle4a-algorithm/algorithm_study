@@ -1,4 +1,4 @@
-''' python
+```python
 from collections import deque
 
 def bfs(place, visited, x, y):
@@ -41,4 +41,4 @@ def solution(places):
         answer.append(1) if flag else answer.append(0)
             
     return answer
-'''
+```
