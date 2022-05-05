@@ -17,7 +17,7 @@ def solution(dartResult):
                 stack.append(int(temp)**3)
             elif str == '*':
                 while stack:
-                    stack_a.append(stack.pop() * 2)
+                    answer += stack.pop() * 2
             else:
                 if stack:
                     answer -= stack.pop()
