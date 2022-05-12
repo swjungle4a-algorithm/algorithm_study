@@ -8,9 +8,9 @@ def solution(id_list, report, k):
         user, reported_user = r.split()
         dic[reported_user].add(user)
     
-    for i in dic.keys():
-        if len(dic[i]) >= k:
-            for j in dic[i]:
-                answer[id_list.index(j)] += 1
+    for report_list in dic.values():
+        if len(report_list) >= k:
+            for id in report_list:
+                answer[id_list.index(id)] += 1
     
     return answer
