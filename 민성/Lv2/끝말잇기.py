@@ -22,7 +22,7 @@ def solution(n, words):
         idx = idx % n 
         if not idx:
             idx += n
-        answer.append(bb)
+        answer.append(idx)
         answer.append(ceil(ans/n))
 
     return answer
