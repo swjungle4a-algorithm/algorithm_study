@@ -8,7 +8,7 @@ def solution(A, B):
             answer += 1
             Asortq.pop()
             Bsort.pop()
-        else Asortq[-1] > Bsort[-1]:
+        else:
             Asortq.popleft()
             Bsort.pop()
         
